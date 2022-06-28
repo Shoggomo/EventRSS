@@ -1,7 +1,7 @@
 # RegensburgFestivalRSS
 
 This repository contains a script, that crawls `allevents.in` for festival events in Regensburg.
-Every day the file `output/rss.xml` is updated automatically. So you can subscribe it with an RSS reader.
+Every day, the file `output/rss.xml` is updated automatically. You can subscribe to it with an RSS reader.
 
 The crawled page is: `https://allevents.in/regensburg/festivals`
 
