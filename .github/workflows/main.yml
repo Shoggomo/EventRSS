@@ -26,7 +26,8 @@ jobs:
           pipenv install --deploy --dev
 
       - name: Run python script
-        run: python main.py
+        run: |
+          pipenv run python main.py
 
       - name: Commit new rss file
         run: |
