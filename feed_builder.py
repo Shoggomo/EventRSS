@@ -25,7 +25,7 @@ class EventFeed:
             fe = self.feed.add_entry()
             fe.id(entry["url"])
             fe.published(entry["date"])
-            fe.title(entry["title"])
+            fe.title(f'{entry["title"]} - {entry["date"].date()}')
             fe.link(href=entry["url"])
 
     def get_rss(self):
