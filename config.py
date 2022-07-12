@@ -15,3 +15,6 @@ CITIES = [
     "Mannheim",
     "Heidelberg"
 ]
+
+# Settings
+SHOW_NEXT_WEEKS = 5

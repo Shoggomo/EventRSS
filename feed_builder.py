@@ -21,7 +21,7 @@ class EventFeed:
         return fg
 
     def add_entries(self, entries):
-        for entry in reversed(entries):
+        for entry in entries:
             fe = self.feed.add_entry()
             fe.id(entry["url"])
             fe.published(entry["date"])
