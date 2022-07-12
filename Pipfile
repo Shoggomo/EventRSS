@@ -5,8 +5,8 @@ name = "pypi"
 
 [packages]
 feedgen = "*"
-requests = "*"
-bs4 = "*"
+selenium = "*"
+webdriver-manager = "*"
 
 [dev-packages]
 

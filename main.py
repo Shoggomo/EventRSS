@@ -14,9 +14,12 @@ def write_to_file(content):
 
 
 def main():
-    entries = event_crawler.crawl_entries()
+    crawler = event_crawler.EventCrawler()
+    entries = crawler.crawl_entries()
+
     feed = EventFeed()
     feed.add_entries(entries)
+
     feed_xml = feed.get_rss()
     write_to_file(feed_xml)
 

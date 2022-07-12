@@ -1,5 +1,5 @@
 # File
-OUTPUT_FILE = "output/rss.xml"
+OUTPUT_FILE = "feeds/rss.xml"
 
 # Feed
 FEED_TITLE = 'Festivals in Regensburg'
@@ -9,4 +9,9 @@ FEED_SUBTITLE = 'Festivals in Regensburg from Allevents'
 
 
 # Crawler
-CRAWLER_URL = "https://allevents.in/regensburg/festivals"
+CRAWLER_URL = "https://allevents.in/Regensburg/festivals"
+CITIES = [
+    "Regensburg",
+    "Mannheim",
+    "Heidelberg"
+]

@@ -16,6 +16,11 @@ jobs:
       - uses: actions/setup-python@v4.0.0
         with:
           python-version: "3.8"
+
+      - name: Install Chrome for Selenium
+        run: |
+          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo apt install ./google-chrome-stable_current_amd64.deb
           
       - name: Install pipenv
         run: |
@@ -32,6 +37,6 @@ jobs:
       - name: Commit new rss file
         run: |
           git config --global user.name 'Github Action Runner'
-          git add output/rss.xml
+          git add .
           git commit -m "Generated new feed $(date -I)"
           git push
