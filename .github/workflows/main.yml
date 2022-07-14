@@ -37,6 +37,6 @@ jobs:
       - name: Commit new rss file
         run: |
           git config --global user.name 'Github Action Runner'
-          git add .
+          git add feeds
           git commit -m "Generated new feed $(date -I)"
           git push
